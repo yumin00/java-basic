@@ -32,4 +32,7 @@ public class Class2 {
             System.out.println(s.name);
         }
     }
+
+    // 기본형을 제외한 나머지는 모두 참조형이다.
+    // 기본형은? int, long, double, boolean (소문자로 시작)
 }
