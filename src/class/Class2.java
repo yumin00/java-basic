@@ -1,7 +1,3 @@
-package src;
-
-import javax.swing.plaf.synth.SynthToolTipUI;
-
 public class Class2 {
     public static void main() {
         Student student1 = new Student();
