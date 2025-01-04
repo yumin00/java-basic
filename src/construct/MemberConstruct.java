@@ -8,11 +8,24 @@ public class MemberConstruct {
     int age;
     int score;
 
-    // 생성자
+    // 생성자 1
     MemberConstruct(String name, int age, int score) {
         this.name = name;
         this.age = age;
         this.score = score;
+    }
+
+    // 생성자 2
+    MemberConstruct(String name, int age) {
+//        this.name = name;
+//        this.age = age;
+//        this.score = 100;
+
+        // 여기에서 this.name과 this.age는 생성자1과 중복임을 알 수 있다.
+        // 생성자 내부에서 생성자를 다시 호출할 수도 있다.
+        this(name, age, 100);
+        // this()를 사용하면 생성자 내부데서 다른 생성자를 호출할 수 있다.
+        // this()는 생성자 코드의 첫줄에만 작성해야한다는 규칙이 있다.
     }
 
     /*
